@@ -19,5 +19,22 @@ class CountriesTableSeeder extends Seeder
                 'code' => $code
             ]);
         }
+
+        DB::table('cities')->insert([
+            'name' => 'Sarajevo',
+            'code' => 'Sa'
+        ]);
+
+        DB::table('industry_types')->insert([
+            'name' => 'Chemical Industry'
+        ]);
+
+        DB::table('contact_types')->insert([
+            'name' => 'Phone'
+        ]);
+
+        DB::table('contact_types')->insert([
+            'name' => 'Facebook'
+        ]);
     }
 }
